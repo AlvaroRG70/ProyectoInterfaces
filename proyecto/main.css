@@ -11,6 +11,7 @@
     color: #222831;
     justify-content: center;
     padding: 5px;
+    font: caption;
 }
 
 .cabecera > div {
@@ -20,8 +21,9 @@
 .menu {
     display: flex;
     justify-content: center;
-    background-color: #393E46;
+    background-color: #222831;
     color: white;
+    font: caption;
 }
 
 .menu > div {
@@ -30,6 +32,7 @@
     padding-top: 22px;
     color: #EEEEEE;
     text-align: center;
+    position: relative;
 }
 
 section {
@@ -43,19 +46,61 @@ img {
 }
 
 .menu>div:hover {
-    background-color: #00ADB5;
-    color: #EEEEEE;
-    border-radius: 5px;
+    
+    color: #00ADB5;
+    transition: all .1s;
+    border-bottom: solid #00ADB5 3px;
+    
+    
 }
+
 
 .submenu {
-    display: none;
-    padding: 0px;
-    margin-left: 0px;
+    visibility: hidden;
     list-style: none;
+    position: absolute;
+    background-color: #393E46;
+    width: 150px;
+    
+
 
 }
 
-.menu>div>submenu:hover {
+.menu div:hover .submenu {
+    visibility: visible;
+}
+
+
+.submenu li a{
     display: block;
+    color: black;
+    color: #00ADB5;
+    margin-bottom: 5px;
+}
+
+.menu>div>span {
+    display: block;
+    padding-bottom: 21px;
+}
+
+
+.submenu li{
+    padding-top: 10px;
+}
+
+input {
+    width: 130px;
+}
+
+.boton {
+    width: 60px;
+    padding: 5px;
+    background-color: #00ADB5;
+    color: #EEEEEE;
+    border: none;
+    border-radius: 3px;
+}
+
+.submenu > li {
+    color: #EEEEEE;
 }
