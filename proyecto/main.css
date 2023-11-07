@@ -104,3 +104,54 @@ input {
 .submenu > li {
     color: #EEEEEE;
 }
+
+
+.carousel{
+    height: 700px;
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+
+    grid-template-areas: 
+        "izq arriba der"
+        "izq centro der"
+        "izq abajo der"
+    ;
+    text-align: center;
+    background-image: url("gym.jpg");
+}
+
+.izq {
+    grid-area: izq;
+    
+    align-self: center;
+}
+
+.arriba {
+    grid-area: arriba;
+    
+    align-self: center;
+    
+}
+
+.centro {
+    grid-area: centro;
+    
+    align-self: center;
+}
+
+.abajo {
+    grid-area: abajo;
+    
+    align-self: center;
+}
+
+.der {
+    grid-area: der;
+    
+    align-self: center;
+}
+
+.carousel > div > i {
+    
+    font-size: 100px;
+}

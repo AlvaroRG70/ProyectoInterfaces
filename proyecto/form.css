@@ -1,0 +1,50 @@
+li {
+    margin: 20px;
+    list-style: none;
+}
+body {
+    background-color: #00ADB5;
+}
+
+form {
+
+    width: 500px;
+    background-color: #EEEEEE;
+    padding: 10px;
+    font: caption;
+    border-radius: 5px;
+}
+.container {
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+h1{
+    text-align: center;
+}
+
+label {
+    padding-right: 40px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+}
+
+.limpiar {
+    width: 150px;
+    height: 35px;
+    background-color: #00ADB5;
+    
+    border-radius: 5px;
+    color: #EEEEEE;
+}
+
+.boton {
+    width: 100px;
+    background-color: #00ADB5;
+    
+    border-radius: 5px;
+    color: #EEEEEE;
+}

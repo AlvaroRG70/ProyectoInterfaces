@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Registro</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div>
+        <form class="container">
+            <h1>Formulario De Registro</h1>
+            <ul>
+                <li class="grid">
+                  <label for="name">Nombre:</label>
+                  <input type="text" id="name" />
+                </li>
+    
+                <li class="grid">
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos"/>
+                </li>
+    
+                <li class="grid"> 
+                    <label for="apellidos">Género:</label>
+                    <ul>
+                        <li>
+                            M<input type="radio" name="genero" value="masculino" /> 
+                            F<input type="radio" name="genero" value="femenino" /> 
+                        </li>
+                    </ul>
+                        
+                </li>
+                    
+                <li class="grid">
+                    <label for="contr">Contraseña</label>
+                    <input type="password" id="contr"/> 
+                </li>
+
+                <li class="grid">
+                  <label for="mail">Correo electrónico:</label>
+                  <input type="email" id="mail"  />
+                </li>
+    
+                <li class="grid">
+                    <label for="fecha">Fecha Nacimiento</label>
+                    <input type="date" id="fecha"  />
+                </li>
+    
+                <li class="grid">
+                    <label for="desc">¿Por qué nos elegiste?</label>
+                    <input type="textarea" id="desc" maxlength="200"/> 
+                </li>
+    
+                <li class="grid">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="text" id="telefono"/>
+                </li>
+        
+                <li class="grid">
+                    <input type="reset" value="Limpiar Formulario" class="limpiar"/>
+                    <button type="button" class="boton">Enviar</button>
+                </li class="grid">
+                
+              </ul>
+        </form>
+    </div>
+    
+</body>
+</html>
