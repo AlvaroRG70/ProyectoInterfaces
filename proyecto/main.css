@@ -107,9 +107,9 @@ input {
 
 
 .carousel{
-    height: 700px;
+    height: 1000px;
     display: grid;
-    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-columns: 1fr 9fr 1fr;
 
     grid-template-areas: 
         "izq arriba der"
@@ -133,16 +133,44 @@ input {
     
 }
 
+.arriba > div > img{
+    width: 400px;
+    height: auto;
+}
+
 .centro {
     grid-area: centro;
     
     align-self: center;
+    padding-left: 500px;
+    padding-right: 500px;
+}
+
+.centro > div {
+    font: caption;
+    font-size: 50px;
+    background-color: #393e4694;
+    color: #EEEEEE;
+    padding-top: 20px;
+    padding-bottom: 20px
+    
+    
 }
 
 .abajo {
     grid-area: abajo;
     
     align-self: center;
+    padding-left: 500px;
+    padding-right: 500px;
+}
+
+.abajo > div {
+    font: caption;
+    background-color: #393e46;
+    color: #EEEEEE;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .der {
@@ -154,4 +182,5 @@ input {
 .carousel > div > i {
     
     font-size: 100px;
+    color: #00acb581;
 }
