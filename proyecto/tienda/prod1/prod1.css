@@ -4,11 +4,9 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: #393E46;
+body{
     font: caption;
 }
-
 .cabecera {
     display: flex;
     background-color: #EEEEEE;
@@ -110,68 +108,86 @@ input {
 .submenu > li {
     color: #EEEEEE;
 }
-
-li {
-    margin: 20px;
-    list-style: none;
-}
 .enlacemenu{
     text-decoration: none;
     color: white;
 }
 
-form {
 
-    width: 500px;
-    background-color: #EEEEEE;
-    padding: 10px;
-    font: caption;
-    border-radius: 5px;
-}
-.container {
-    margin: 0 auto;
-    margin-top: 70px;
-    border: 4px #00ADB5 solid;
-}
-
-h1{
+.contenedor {
     text-align: center;
 }
 
-label {
-    padding-right: 40px;
-}
-
-.formulario{
+.imagenes {
+    text-align: center;
     display: grid;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 4fr 2fr 1fr;
+    grid-template-areas: 
+        "grande grande grande grande descripcion"
+        "grande grande grande grande precio"
+        "chica1 chica2 chica3 chica4 compra"
+    ;
+    align-items: start;
+    width: 800px;
+    height: 500px;
+    margin-top: 50px;
+    align-items: start;
+    place-items: center;
+    padding-left: 34%;
+    padding-right: 20%;
 }
 
-.mascfem {
-    display: flex;
+.grande{
+    grid-area: grande;
+}
+.grande > img{
+    width: 400px;
+    height: auto;
 }
 
-.limpiar {
-    width: 150px;
-    height: 35px;
-    background-color: #00ADB5;
-    border-radius: 5px;
-    color: #EEEEEE;
+.chica1{
+    grid-area: chica1;
 }
 
-.botonform {
-    width: 10       0px;
-    background-color: #00ADB5;
-    border-radius: 5px;
-    color: #EEEEEE;
+.chica2{
+    grid-area: chica2;
 }
+
+.chica3{
+    grid-area: chica3;
+}
+
+.chica4{
+    grid-area: chica4;
+}
+
+.descripcion{
+    grid-area: descripcion;
+}
+
+.precio{
+    grid-area: precio;
+}
+
+.compra{
+    grid-area: compra;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
     display: grid;
     grid-template-rows: 2fr 5fr;
     grid-template-areas: 
@@ -181,7 +197,7 @@ footer {
     margin-top: 50px;
     background-color: #222831;
     color: #EEEEEE;
-
+    bottom: 0;
     justify-content: space-evenly
     
 }

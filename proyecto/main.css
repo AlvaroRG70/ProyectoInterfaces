@@ -53,6 +53,7 @@ img {
     color: #00ADB5;
     transition: all .1s;
     border-bottom: solid #00ADB5 3px;
+    cursor: pointer;
     
     
 }
@@ -107,7 +108,10 @@ input {
 .submenu > li {
     color: #EEEEEE;
 }
-
+.enlacemenu{
+    text-decoration: none;
+    color: white;
+}
 
 .carousel{
     height: 1000px;
