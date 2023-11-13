@@ -113,9 +113,16 @@ input {
     color: white;
 }
 
+.titulo{
+    margin: 30px;
+}
 
 .contenedor {
+    margin-top: 50px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .imagenes {
@@ -130,11 +137,10 @@ input {
     align-items: start;
     width: 800px;
     height: 500px;
-    margin-top: 50px;
+    
     align-items: start;
     place-items: center;
-    padding-left: 34%;
-    padding-right: 20%;
+
 }
 
 .grande{
@@ -165,14 +171,40 @@ input {
     grid-area: descripcion;
 }
 
+.descripcion > h1 {
+    margin-bottom: 20px;
+}
+
+
+.estrella{
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin: 20px;
+}
+
 .precio{
     grid-area: precio;
+    background-color: #00ADB5;
+    color:white;
+    padding: 20px;
+    border: 1px solid #222831;
+    border-radius: 5px;
 }
 
 .compra{
     grid-area: compra;
 }
 
+.compra > button {
+    width: 200px;
+    height: 50px;
+    background-color: #393E46;
+    color: white;
+}
 
 
 
@@ -188,6 +220,9 @@ input {
 
 
 footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     display: grid;
     grid-template-rows: 2fr 5fr;
     grid-template-areas: 
@@ -197,7 +232,7 @@ footer {
     margin-top: 50px;
     background-color: #222831;
     color: #EEEEEE;
-    bottom: 0;
+
     justify-content: space-evenly
     
 }

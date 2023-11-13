@@ -4,11 +4,9 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: #393E46;
+body{
     font: caption;
 }
-
 .cabecera {
     display: flex;
     background-color: #EEEEEE;
@@ -110,61 +108,115 @@ input {
 .submenu > li {
     color: #EEEEEE;
 }
-
-li {
-    margin: 20px;
-    list-style: none;
-}
 .enlacemenu{
     text-decoration: none;
     color: white;
 }
 
-form {
-
-    width: 500px;
-    background-color: #EEEEEE;
-    padding: 10px;
-    font: caption;
-    border-radius: 5px;
-}
-.container {
-    margin: 0 auto;
-    margin-top: 70px;
-    border: 4px #00ADB5 solid;
+.titulo{
+    margin: 30px;
 }
 
-h1{
+
+.contenedor {
+    margin-top: 50px;
     text-align: center;
-}
-
-label {
-    padding-right: 40px;
-}
-
-.formulario{
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
-}
-
-.mascfem {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.limpiar {
-    width: 150px;
-    height: 35px;
-    background-color: #00ADB5;
-    border-radius: 5px;
-    color: #EEEEEE;
+.imagenes {
+    text-align: center;
+    display: grid;
+    grid-template-rows: 4fr 2fr 1fr;
+    grid-template-areas: 
+        "grande grande grande grande descripcion"
+        "grande grande grande grande precio"
+        "chica1 chica2 chica3 chica4 compra"
+    ;
+    align-items: start;
+    width: 800px;
+    height: 500px;
+    
+    align-items: start;
+    place-items: center;
+
 }
 
-.botonform {
-    width: 100px;
-    background-color: #00ADB5;
-    border-radius: 5px;
-    color: #EEEEEE;
+.grande{
+    grid-area: grande;
 }
+.grande > img{
+    width: 400px;
+    height: auto;
+}
+
+.chica1{
+    grid-area: chica1;
+}
+
+.chica2{
+    grid-area: chica2;
+}
+
+.chica3{
+    grid-area: chica3;
+}
+
+.chica4{
+    grid-area: chica4;
+}
+
+.descripcion{
+    grid-area: descripcion;
+}
+
+.descripcion > h1 {
+    margin-bottom: 20px;
+}
+
+
+.estrella{
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin: 20px;
+}
+
+.precio{
+    grid-area: precio;
+    background-color: #00ADB5;
+    color:white;
+    padding: 20px;
+    border: 1px solid #222831;
+    border-radius: 5px;
+}
+
+.compra{
+    grid-area: compra;
+}
+
+.compra > button {
+    width: 200px;
+    height: 50px;
+    background-color: #393E46;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
