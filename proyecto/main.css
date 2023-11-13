@@ -145,8 +145,8 @@ input {
     grid-area: centro;
     
     align-self: center;
-    padding-left: 500px;
-    padding-right: 500px;
+    padding-left: 400px;
+    padding-right: 400px;
 }
 
 .centro > div {
@@ -164,8 +164,8 @@ input {
     grid-area: abajo;
     
     align-self: center;
-    padding-left: 500px;
-    padding-right: 500px;
+    padding-left: 400px;
+    padding-right: 400px;
 }
 
 .abajo > div {
@@ -281,20 +281,20 @@ input {
 
 
 footer {
-    margin-top: 50px;
-    background-color: #00ADB5;
-    bottom: 0;
-    
-}
-.pie{
     display: grid;
     grid-template-rows: 2fr 5fr;
     grid-template-areas: 
         "redes redes"
         "direccion descripcion"
     ;
+    margin-top: 50px;
+    background-color: #222831;
+    color: #EEEEEE;
+    bottom: 0;
+    justify-content: space-evenly
     
 }
+
 
 .redes {
     grid-area: redes;
@@ -305,11 +305,13 @@ footer {
 .direccion {
     grid-area: direccion;
     list-style: circle;
-    margin-left: 200px;
+    
+    
 
 }
 
 .descripcion {
     grid-area: descripcion;
+    width: 400px;
     
 }
