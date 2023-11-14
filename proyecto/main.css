@@ -116,7 +116,7 @@ input {
 .carousel{
     height: 1000px;
     display: grid;
-    grid-template-columns: 1fr 9fr 1fr;
+    
 
     grid-template-areas: 
         "izq arriba der"
@@ -201,8 +201,8 @@ input {
 .main {
     
     display: grid;
-    height: 550px;
-    grid-template-columns: 1fr 1fr 1fr;
+    
+    
     grid-template-areas: 
         "izq2 centro2 der2"
     ;
@@ -217,6 +217,20 @@ input {
     background-color: #00ADB5;
     width: 500px;
     border-radius: 5px;
+    box-shadow: 0 0 10px #393e46;
+}
+
+.item1:hover {
+    background-color: #00acb577;
+    border: 1px solid #222831;
+}
+
+.item1:hover .cabezal{
+    background-color: #52575f;
+}
+
+.item1:hover ul{
+    color: #222831;
 }
 
 .item2 {
@@ -224,6 +238,21 @@ input {
     background-color: #00ADB5;
     width: 500px;
     border-radius: 5px;
+    box-shadow: 0 0 10px #393e46;
+
+}
+
+.item2:hover {
+    background-color: #00acb577;
+    border: 1px solid #222831;
+}
+
+.item2:hover .cabezal{
+    background-color: #52575f;
+}
+
+.item2:hover ul{
+    color: #222831;
 }
 
 .item3 {
@@ -231,7 +260,22 @@ input {
     background-color: #00ADB5;
     width: 500px;
     border-radius: 5px;
+    box-shadow: 0 0 10px #393e46;
 }
+
+.item3:hover {
+    background-color: #00acb577;
+    border: 1px solid #222831;
+}
+
+.item3:hover .cabezal{
+    background-color: #52575f;
+}
+
+.item3:hover ul{
+    color: #222831;
+}
+
 .cabezal {
     
     padding-top: 35px;
@@ -278,6 +322,7 @@ input {
     text-align: center;
     background-color: #393E46;
     color: #EEEEEE;
+    cursor: pointer;
     
 }
 
@@ -319,3 +364,130 @@ footer {
     width: 400px;
     
 }
+
+
+/*
+Comenzamos con media query --- iPad (810x1080)
+*/
+@media only screen and (max-width: 810px) {
+
+    .carousel{
+        height: 500px;
+        display: grid;
+        
+    
+        grid-template-areas: 
+            "izq arriba der"
+            "izq centro der"
+            "izq abajo der"
+        ;
+    }
+    
+    .izq {
+        grid-area: izq;
+        
+        align-self: center;
+    }
+    
+    .arriba {
+        grid-area: arriba;
+        
+        align-self: center;
+        
+    }
+    
+    .arriba > div > img{
+        width: 150px;
+        height: auto;
+    }
+    
+    .centro {
+        grid-area: centro;
+        
+        align-self: center;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    
+    .centro > div {
+        
+        font-size: 20px;
+        background-color: #393e4694;
+        color: #EEEEEE;
+        padding-top: 0px;
+        padding-bottom: 0px
+        
+        
+    }
+    
+    .abajo {
+        grid-area: abajo;
+        
+        align-self: center;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    
+    .abajo > div {
+        
+        background-color: #393e46;
+        color: #EEEEEE;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .der {
+        grid-area: der;
+        
+        align-self: center;
+    }
+    
+    .carousel > div > i {
+        
+        font-size: 100px;
+        color: #00acb581;
+    }
+    
+    
+
+
+
+    .main {
+    
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "izq2" 
+            "centro2" 
+            "der2"
+        ;
+        margin-top: 50px;
+        justify-items: center;
+    
+        
+    }
+    
+    .item1 {
+        margin-top: 20px;
+        grid-area: izq2;
+    
+    }
+
+    .item2 {
+        margin-top: 20px;
+        grid-area: centro2;
+    
+    }
+
+    .item3 {
+        margin-top: 20px;
+        grid-area: der2;
+    
+    }
+
+
+
+
+
+  }
+

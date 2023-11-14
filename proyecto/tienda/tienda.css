@@ -121,12 +121,8 @@ input {
 
 .tienda{
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: 
-        "prod1 prod2 prod3"
-        "prod4 prod5 prod6"
-    ;
     text-align: center;
     margin-top: 50px;
     padding-left: 400px;
@@ -155,47 +151,18 @@ h2 {
 }
 
 
-.prod1 {
-    grid-area: prod1;
+.prod {
     margin: 20px;
-    border: 1px solid #222831;
     height: 600px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #393e46;
     
 }
 
 
 
 
-.prod2 {
-    grid-area: prod2;
-    margin: 20px;
-    border: 1px solid #222831;
-    height: 600px;
-}
-.prod3 {
-    grid-area: prod3;
-    margin: 20px;
-    border: 1px solid #222831;
-    height: 600px;
-}
-.prod4 {
-    grid-area: prod4;
-    margin: 20px; 
-    border: 1px solid #222831;
-    height: 600px;
-}
-.prod5 {
-    grid-area: prod5;
-    margin: 20px; 
-    border: 1px solid #222831;
-    height: 600px;
-}
-.prod6 {
-    grid-area: prod6;
-    margin: 20px; 
-    border: 1px solid #222831;
-    height: 600px;  
-}
+
 
 
 

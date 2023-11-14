@@ -221,9 +221,6 @@ input {
 
 
 footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
     display: grid;
     grid-template-rows: 2fr 5fr;
     grid-template-areas: 
@@ -233,7 +230,7 @@ footer {
     margin-top: 50px;
     background-color: #222831;
     color: #EEEEEE;
-
+    bottom: 0;
     justify-content: space-evenly
     
 }
