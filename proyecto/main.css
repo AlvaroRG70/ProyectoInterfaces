@@ -201,8 +201,6 @@ input {
 .main {
     
     display: grid;
-    
-    
     grid-template-areas: 
         "izq2 centro2 der2"
     ;
@@ -243,7 +241,7 @@ input {
 }
 
 .item2:hover {
-    background-color: #00acb577;
+    background-color: #00acb5b4;
     border: 1px solid #222831;
 }
 
@@ -253,6 +251,10 @@ input {
 
 .item2:hover ul{
     color: #222831;
+}
+
+.item2>.precio:hover button{
+    background-color: #00ADB5;
 }
 
 .item3 {
@@ -313,6 +315,7 @@ input {
 .precio{
     text-align: center;
     margin-top: 15px;
+    margin-bottom: 20px;
 }
 .precio > button {
     
@@ -369,6 +372,45 @@ footer {
 /*
 Comenzamos con media query --- iPad (810x1080)
 */
+@media only screen and (max-width: 1600){
+    
+
+
+
+    .main {
+    
+        display: grid;
+        grid-template-areas: 
+            "izq2" 
+            "centro2" 
+            "der2"
+        ;
+        margin-top: 50px;
+        justify-items: center;
+    
+        
+    }
+    
+    .item1 {
+        margin-top: 20px;
+        grid-area: izq2;
+    
+    }
+
+    .item2 {
+        margin-top: 20px;
+        grid-area: centro2;
+    
+    }
+
+    .item3 {
+        margin-top: 20px;
+        grid-area: der2;
+    
+    }
+}
+
+
 @media only screen and (max-width: 810px) {
 
     .carousel{
@@ -448,7 +490,6 @@ Comenzamos con media query --- iPad (810x1080)
         color: #00acb581;
     }
     
-    
 
 
 
@@ -486,8 +527,29 @@ Comenzamos con media query --- iPad (810x1080)
     }
 
 
-
-
-
   }
 
+
+@media only screen and (max-width: 375px) {
+
+    .cabecera {
+
+        flex-direction: column;
+        text-align: center;
+        padding: 0px;
+        
+    }
+    .cabecera > div {
+        margin-left: 0px;
+    }
+
+    .menu {
+        position: absolute;
+        flex-direction: column;
+        visibility: hidden;
+    }
+
+    .cabecera:hover ~ .menu{
+        visibility: visible;
+    }
+} 

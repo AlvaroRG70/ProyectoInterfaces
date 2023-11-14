@@ -254,3 +254,15 @@ footer {
     width: 400px;
     
 }
+
+
+@media only screen and (max-width: 810px) {
+
+    .titulo{
+    
+        text-align: center;
+    
+    }
+
+
+}
