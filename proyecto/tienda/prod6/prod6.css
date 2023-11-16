@@ -135,14 +135,18 @@ input {
         "grande grande grande grande precio"
         "chica1 chica2 chica3 chica4 compra"
     ;
-    align-items: start;
-    width: 800px;
-    height: 500px;
     
     align-items: start;
+    width: 800px;
+    height: 520px;
+    box-shadow: 0 0 10px #393e46;
+    align-items: start;
     place-items: center;
+    border-radius: 5px;
+    padding-left: 10px;
 
 }
+
 
 .grande{
     grid-area: grande;
