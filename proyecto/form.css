@@ -202,3 +202,97 @@ footer {
     width: 400px;
     
 }
+
+@media only screen and (max-width: 375px) {
+    
+    .cabecera {
+
+        flex-direction: column;
+        text-align: center;
+        padding: 0px;
+        width: 100%;
+        
+    }
+    .cabecera > div {
+        margin-left: 0px;
+    }
+
+    .menu {
+        position: absolute;
+        flex-direction: column;
+        visibility: hidden;
+    }
+
+    .cabecera:hover ~ .menu{
+        visibility: visible;
+    }
+
+
+
+    
+    .formulario{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    .formulario > label{
+        width: 50%;
+    }
+    .formulario > li{
+        width: 50%;
+    }
+
+
+    footer {
+        display: grid;
+        grid-template-areas: 
+            "redes" 
+            "redes"
+            "direccion" 
+            "descripcion"
+        ;
+        width: 100%;
+        font-size: 10px;
+    }
+    
+    
+    .redes {
+        grid-area: redes;
+        margin: 20px;
+        text-align: center;
+    }
+    
+    .direccion {
+        grid-area: direccion;
+        list-style: circle;
+        margin: 20px;
+        
+    }
+    
+    .descripcion {
+        grid-area: descripcion;
+        width: 400px;
+        padding: 20px;
+    }
+
+}
+
+
+
+@media screen and (prefers-color-scheme: dark) {
+
+    body {
+      background-color:#393E46;
+      color: white;
+    }
+    
+    .cabecera{
+        background-color: #393E46;
+        color: white;
+    }
+    
+    .container {
+        background-color: #222831;
+    }
+}

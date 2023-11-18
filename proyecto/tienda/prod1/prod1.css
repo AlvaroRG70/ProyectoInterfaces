@@ -165,11 +165,11 @@ input {
     grid-area: chica4;
 }
 
-.descripcion{
+.descripcion2{
     grid-area: descripcion;
 }
 
-.descripcion > h1 {
+.descripcion2 > h1 {
     margin-bottom: 20px;
 }
 
@@ -309,13 +309,8 @@ footer {
         width: 70%; /* Ajustar la imagen al ancho del contenedor */
         height: auto;
     }
-    .descripcion{
-    width: 10%;
     
-    }
-    .descripcion > h1 {
-    font-size: 18px; /* Reducir el tamaño del título si es necesario */
-    }
+    
     
     .precio,
     .compra {
@@ -369,5 +364,28 @@ footer {
         width: 400px;
         padding: 20px;
     }
+
+}
+
+@media screen and (prefers-color-scheme: dark) {
+
+    body {
+      background-color:#393E46;
+      color: white;
+    }
+    
+    .cabecera{
+        background-color: #393E46;
+        color: white;
+        
+    }
+    
+    .imagenes {
+        background-color: #222831;
+        box-shadow: 0 0 10px #EEEEEE;
+    }
+
+
+
 
 }

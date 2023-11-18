@@ -371,43 +371,7 @@ footer {
 /*
 Comenzamos con media query --- iPad (810x1080)
 */
-@media only screen and (max-width: 1600){
-    
 
-
-
-    .main {
-    
-        display: grid;
-        grid-template-areas: 
-            "izq2" 
-            "centro2" 
-            "der2"
-        ;
-        margin-top: 50px;
-        justify-items: center;
-    
-        
-    }
-    
-    .item1 {
-        margin-top: 20px;
-        grid-area: izq2;
-    
-    }
-
-    .item2 {
-        margin-top: 20px;
-        grid-area: centro2;
-    
-    }
-
-    .item3 {
-        margin-top: 20px;
-        grid-area: der2;
-    
-    }
-}
 
 
 @media only screen and (max-width: 810px) {
@@ -609,7 +573,7 @@ Comenzamos con media query --- iPad (810x1080)
     
     .item3 {
         grid-area: der2;
-        width: 80%;
+        width: 350px;
     }
     
     
@@ -648,3 +612,32 @@ Comenzamos con media query --- iPad (810x1080)
         padding: 20px;
     }
 } 
+
+
+@media screen and (prefers-color-scheme: dark) {
+    body {
+      background-color:#393E46;
+      color: white;
+    }
+    .cabecera{
+        background-color: #393E46;
+        color: white;
+    }
+
+    .item1:hover{
+        box-shadow: 0 0 10px #EEEEEE;
+    }
+
+    .item2:hover {
+        box-shadow: 0 0 10px #EEEEEE;
+    }
+
+    .item3:hover{
+        box-shadow: 0 0 10px #EEEEEE;
+    }
+
+    .cabezal {
+        background-color: #222831;
+        color: white;
+    }
+  }

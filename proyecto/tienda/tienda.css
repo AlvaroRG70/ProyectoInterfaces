@@ -307,3 +307,30 @@ footer {
     }
 
 }
+
+
+@media screen and (prefers-color-scheme: dark) {
+    body {
+      background-color:#393E46;
+      color: white;
+    }
+    .cabecera{
+        background-color: #393E46;
+        color: white;
+    }
+    
+    .prod {
+        background-color: #222831;
+        box-shadow: 0 0 10px #eeeeee96;
+    }
+
+    .prod > div > a {
+        color: white;
+    }
+
+    
+
+  }
+
+
+  
